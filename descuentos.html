@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller #2 | Porcentaje y descuentos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <nav class="figuras-nav">
+      <a href="./index.html">Inicio</a>
+      <ul>
+        <li>
+          <a href="./figuras.html"> Taller #1</a>
+        </li>
+        <li>
+          <a href="/taller3.html"> Taller #3</a>
+        </li>
+        <li>
+          <a href="taller4.html"> Taller #4</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="title">
+      <h1>Porcentaje y descuentos</h1>
+      <p>Taller #2</p>
+    </header>
+    <div class="container-items-discount">
+      <section class="item">
+        <img src="./assets/images/cupon.png" alt="Imagen de cuadrado" height="100"></img>
+        <h2>Calcula el precio con descuento</h2>
+
+        <form>
+          <label for="InputPrecio">Ingrese el <strong>precio</strong>*:</label>
+          <input id="InputPrecio" type="number" />
+          <label for="InputDescuento">Ingrese el <strong>porcentaje(%)</strong> de descuento*:</label>
+        <input id="InputDescuento" type="number" />
+          <!-- <label for="InputCoupon"
+            >Ingresa el cupon de descuento:</label
+          >
+          <input id="InputCoupon" type="text" /> -->
+          <button class="primary-button"  type="button" onclick="onClickButtonPriceDiscount()">
+            Calcular precio
+          </button>
+        </form>
+        <p id="resultPrice"></p>
+      </section>
+    </div>
+    <footer>
+      <p>Hecho con amor</p>
+    </footer>
+    <script src="./assets/js/descuentos.js"></script>
+  </body>
+</html>
